@@ -1,0 +1,43 @@
+#gameBoard {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    justify-content: center;
+}
+
+.square {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    font-weight: 600;
+}
+
+#square-0,
+#square-1,
+#square-2 {
+    border-top: none;
+}
+
+#square-0,
+#square-3,
+#square-6 {
+    border-left: none;
+}
+
+#square-6,
+#square-7,
+#square-8 {
+    border-bottom: none;
+}
+
+#square-2,
+#square-5,
+#square-8 {
+    border-right: none;
+}
+
+h2 {
+text-align: center;
+}
